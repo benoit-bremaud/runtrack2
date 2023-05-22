@@ -21,6 +21,10 @@
         echo $str2, " ", $str, " ", $str3;
         echo "<br>";
         echo "$str2 $str $str3";
+        echo "<br>";
+        $val = 6;
+        echo $val;
+        
     ?>
 </body>
 </html>
