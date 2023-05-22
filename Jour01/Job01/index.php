@@ -15,6 +15,12 @@
         $str = "LaPlateforme"; // création de la variable 'str' et affectation valeur "LaPlateforme"
         
         echo $str; // affichage du contenu de la variable 'str'
+        echo "<br>";
+        $str2 = "Vive"; // création et affectation variable $str2
+        $str3 = "!";
+        echo $str2, " ", $str, " ", $str3;
+        echo "<br>";
+        echo "$str2 $str $str3";
     ?>
 </body>
 </html>
