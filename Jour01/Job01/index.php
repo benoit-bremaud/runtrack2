@@ -10,6 +10,11 @@
 <body>
     <?php
         echo "Hello LaPlateforme";
+        echo "<br>"; // retour à la ligne
+
+        $str = "LaPlateforme"; // création de la variable 'str' et affectation valeur "LaPlateforme"
+        
+        echo $str; // affichage du contenu de la variable 'str'
     ?>
 </body>
 </html>
