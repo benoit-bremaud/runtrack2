@@ -24,7 +24,10 @@
         echo "<br>";
         $val = 6;
         echo $val;
-        
+        $val += 4;
+        echo "<br>";
+        echo $val;
+
     ?>
 </body>
 </html>
