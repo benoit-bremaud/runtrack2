@@ -27,6 +27,14 @@
         $val += 4;
         echo "<br>";
         echo $val;
+        echo "<br>";
+        $myBool = true;
+        echo $myBool;
+        echo gettype($myBool);
+        echo "<br>";
+        $myBool = false;
+        echo $myBool;
+        echo gettype($myBool);
 
     ?>
 </body>
