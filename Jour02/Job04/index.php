@@ -17,24 +17,33 @@
     <main>
         <div style="background-color:grey; padding:5px 10px 5px 10px;">
             <h2>Jour 2 - Job 04</h2>
-            <h3>Affiche les nombres de 1 à 100 avec retour à la ligne :</h3>
-            <h4>Puis remplacer certains nombres selon les conditions suivantes :</h4>
+            <h3>Affiche tous les nombres premiers jusqu'à 1000 :</h3>
+            <!-- <h4></h4>
             <ul>
                 <li>Ecrire <b>"Fizz"</b> si le nombre est un <u>multiple de 3</u></li>
                 <li>Ecrire <b>"Buzz"</b> si le nombre est un <u>multiple de 5</u></li>
                 <li>Ecrire <b>"FizzBuzz"</b> si le nombre est un <u>multiple de 3 ET de 5</u></li>
-            </ul>
+            </ul> -->
         </div>
         <div style="background-color:purple; padding:5px 10px 5px 10px;">
         <h3>Début du programme :</h3>
         <?php
-            for ($i = 2; $i <= 1000; $i++) { /*repète 998 fois une action*/
-                for ($j = 2; $j <= $i; $j++) {
-                    if ($i % $j != 0) {
-                        echo "$i est un nombre premier<br>";
+            function estPremier($nombre) {
+                if ($nombre < 2) {
+                    return false;
+                }
+                for ($i = 2; $i <= sqrt($nombre); $i++) {
+                    if ($nombre % $i === 0) {
+                        return false;
                     }
                 }
-                // echo "<br>";
+                return true;
+            }
+
+            for ($nombre = 2; $nombre <= 1000; $nombre++) {
+                if (estPremier($nombre)) {
+                    echo $nombre . " est un nombre premier<br />";
+                }
             }
         ?>
         </div>
