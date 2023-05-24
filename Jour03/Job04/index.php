@@ -33,15 +33,15 @@ dans cette chaîne.</p>
             $count = 0;
 
             // Compter le nombre de "a"
-            for ($i=0; $i < $strlenght; $i++) {
+            for ($i=0; $i < $alphabetlenght; $i++) {
                 $count = 0;
-                for ($j=0; $j < $alphabetlenght; $j++) { 
-                    if (strtoupper($str[$i]) == strtoupper($alphabet[$j])) {
+                for ($j=0; $j < $strlenght; $j++) {
+                    if (strtoupper($str[$j]) == strtoupper($alphabet[$i])) {
                         $count++;
                     }
                 }
                 if ($count != 0) {
-                    echo "La lettre $str[$i] est présente $count fois dans le texte<br>";
+                    echo "La lettre $alphabet[$i] est présente $count fois dans le texte<br>";
                 }
             }
         ?>
