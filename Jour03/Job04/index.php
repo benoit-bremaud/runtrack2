@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="resources/images/favicon.webp">
-    <title>Document</title>
+    <title>JOB04</title>
 </head>
-<body>
+<body style="background-color:red";>
     <header>
         <nav>
 
         </nav>
     </header>
     <main>
-        <h1>Runtrack2 - PHP</h1>
+        <h1 style="color:blue";>Runtrack2 - PHP</h1>
         <p></p>
         <h2>Jour 03 - Job 04</h2>
         <p></p>
-        <h3>COnsignes :</h3>
+        <h3>Consignes :</h3>
         <p>Créez une variable de type string nommée $str et affectez y le texte :
 “Dans l'espace, personne ne vous entend crier”.
 Créez un algorithme qui parcourt, compte et affiche le nombre de caractères présents
