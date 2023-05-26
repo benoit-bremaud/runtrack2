@@ -37,7 +37,7 @@ champs &lt;input&gt; de type “text” et un &lt;input&gt;> de type “submit�
         <h3><hr>Début du programme :</h3>
         <p></p>
         <h4>Création d'un formulaire :</h4>
-        <form action="envoi.php" method="get">
+        <form action="index.php" method="get">
             <fieldset style="padding: 20px">
                 <legend>Login Info</legend>
                 <label for="username">Name</label>
@@ -45,8 +45,13 @@ champs &lt;input&gt; de type “text” et un &lt;input&gt;> de type “submit�
                 <label for="passe">Mot de passe</label>
                 <input type="password" name="motdepasse" id="pass" placeholder="password">
             </fieldset>
-            <input type="submit" value="Envoyer">
+            <input type="submit" value="OK">
         </form>
+        <!-- Début section php -->
+        <?php
+        echo "Le nombre d’arguments GET envoyé est : ".count($_GET)."<br>";
+    
+        ?>
     </main>
     <footer>
 
