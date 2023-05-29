@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<style>
+    body {
+        color: white;
+        background-color: #68d670;
+    }
+
+    fieldset {
+        /* border-color: yellow; */
+        border-radius: 10px;
+        /* arrondi les angles de la bordure */
+        border: solid 3px yellow;
+        /* modifie épaisseur et couleur bordure*/
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB03</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Runtrack2 - PHP</h1>
+        <p></p>
+        <h2>Jour 04 - Job 03</h2>
+        <p></p>
+        <h3>Consignes :</h3>
+        <p>Développez un algorithme qui affiche le nombre d’arguments $_POST.</p>
+        <p>Tips :</p>
+        <p>Pour tester votre code, créez un formulaire html &lt;form&gt; de type POST avec différents
+            champs &lt;input&gt; de type “text” et un &lt;input&gt; de type “submit” pour l’envoi.</p>
+        <p>Vous pouvez ensuite afficher avec echo directement dans votre page par exemple :</p>
+        <p>"Le nombre d’arguments POST envoyé est : "</p>
+        <h3>Début du programme</h3>
+        <h4>Mise en place du formulaire</h4>
+
+        <!-- début du formulaire -->
+        <form action="envoi.php" method="post">
+
+            <fieldset> <!-- création d'un encadré autour du formulaire-->
+
+                <legend>Arguments test méthode <strong>$_POST</strong></legend>
+                <!-- étiquette pour l'encadré du formulaire -->
+
+                <!-- Création d'une liste déroulante à choix unique -->
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mme">Mme</option>
+                    <option value="Pute">Pute</option>
+                    <option value="Salope">Salope</option>
+                </select><br>
+
+
+                <!-- Création d'une zone de texte simple type text-->
+                <label for="fname">First Name</label>
+                <!-- Création d'une "étiquette" avec les balises <label></label>-->
+                <input type="text" name="fname" id="fname"><br> <!--zone de saisie à une seule ligne -> type "text" -->
+
+                <!-- Création d'une zone de texte simple type text-->
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname"><br>
+
+                <!-- Création d'une zone de texte simple type email-->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"><br>
+
+                <!-- Création d'une zone de texte simple type date-->
+                <label for="age">Birth Date</label>
+                <input type="date" name="birthday" id="age"><br>
+
+                <!-- Liste déroulante à selection multiple -->
+                <!-- <label for="fcolor">What is your favorite color</label>
+                <select name="color[]" id="fcolor" multiple size="2"> seulement 3 lignes visibles
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+                <option value="white">white</option>
+                </select><br> -->
+
+                <!-- création d'une zone de texte sur plusieurs lignes -->
+                <label for="msg">Votre message</label>
+                <textarea name="message" id="msg" cols="40" rows="5">Tapez ici votre message</textarea><br>
+
+                <!-- création de boutons radio à choix unique -->
+                <label>Choice :</label> <!-- définition de l'étiquette du groupe -->
+
+                <!-- création du bouton radio n°1 -->
+                <input type="radio" name="navig" id="bradio1" value="bad"> <!-- déclaration "input" de type "radio" -->
+                <label for="bradio1">Bad</label> <!-- définition de l'étiquette du bouton radio n°1 -->
+
+                <!-- création du bouton radio n°2 -->
+                <input type="radio" name="navig" id="bradio2" value="good">
+                <label for="bradio2">Good</label>
+
+                <!-- création du bouton radio n°3 -->
+                <input type="radio" name="navig" id="bradio3" value="amazing" checked>
+                <!-- le "cheched" permet l'activation par défaut du bouton radio-->
+                <label for="bradio3">Amazing</label>
+
+                <!-- création de case à cocher
+                <br>
+                <label>Qualité du site :</label>
+
+                <input type="checkbox" name="instructif" id="choix1" value="instructif">
+                <label for="choix1">Instructif</label>
+
+                <input type="checkbox" name="esthetique" id="choix2" value="esthétique">
+                <label for="choix2">Esthétique</label>
+
+                <input type="checkbox" name="clair" id="choix3" value="clair">
+                <label for="choix3">Clair</label>
+
+                <input type="checkbox" name="pratique" id="choix4" value="pratique">
+                <label for="choix4">Pratique</label> -->
+
+            </fieldset>
+            <input type="reset" value="Effacer">
+            <input type="submit" value="Envoi la purée coquin !!">
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
