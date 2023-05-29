@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/design.css">
+    <link rel="shortcut icon" href="./resources/images/favicon.webp" type="image/favicon">
+    <title>JOB06</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Runtrack2 - PHP</h1>
+        <p></p>
+        <h2>Jour 04 - Job 06</h2>
+        <p></p>
+        <h3>Consignes :</h3>
+        <p>Faire un <b>formulaire</b> de type <strong>GET</strong> avec un <i>champ</i> &lt;input&gt; text nommé <b>nombre</b> et un
+            <i>bouton</i> <b>submit</b>.
+        <h4>Après validation du formulaire :</h4>
+            <ul>
+                <li>si la valeur entrée est un nombre <b>pair</b>, afficher <i>"Nombre pair"</i>,</li>
+                <li>si c'est un nombre <b>impair</b>, afficher <i>"Nombre impair"</i></li>
+            </ul>
+        <h3>Début du programme :</h3>
+        <h4>Création du formulaire :</h4>
+        <form action="./includes/envoi.php" method="get">
+            <fieldset>
+                <legend>A vous de jouer !!</legend>
+                <label for="nombre">Choisissez un nombre</label>
+                <input type="number" name="nombre" id="nombre">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
