@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=brave">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/images/favicon.webp" type="image/favicon.webp">
+    <title>JO0B05</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Runtrack2 - PHP</h1>
+        <p></p>
+        <h2>Jour 04 - Job 05</h2>
+        <p></p>
+        <h3>Consignes :</h3>
+        <p>Faire un formulaire de connexion de type POST (se demander, pourquoi pas GET ?)
+            ayant deux champs &lt;input&gt; nommés username et password.</p>
+        <h4>Après validation du formulaire :</h4>
+        <p>
+        <ul>
+            <li>si le username est “John” ET le password est “Rambo” afficher : "C’est pas ma guerre"</li>
+            <li>sinon afficher : "Votre pire cauchemar".</li>
+        </ul>
+        </p>
+        <h3>Début du programme :</h3>
+        <h4>Formulaire :</h4>
+
+        <!-- Début du formulaire -->
+        <form action="includes/envoi.php" method="post">
+            <fieldset>
+                <legend>Log In</legend>
+                <label for="u_name">Your Username</label>
+                <input type="text" name="username" id="u_name"><br>
+
+                <label for="p_word">Your PassWord</label>
+                <input type="password" name="password" id="p_word"><br>
+                <br>
+                <input type="reset" value="Delete All">
+                <input type="submit" value="Envoyer">
+            </fieldset>
+            
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
