@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/design.css">
+    <link rel="shortcut icon" href="./resources/images/favicon.webp" type="image/x-icon">
+    <title>JOB07</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1><hr>Runtrack2 - PHP</h1>
+        <p></p>
+        <h2><hr>Jour 04 - Job 07</h2>
+        <p></p>
+        <h3><hr>Consignes :</h3>
+        <p>Faire un <b>formulaire</b> avec deux &lt;input&gt; de type <b>text</b> ayant comme <b>nom</b>
+            <i>"largeur"</i> et
+            <i>"hauteur"</i> et un bouton <b>submit</b>.
+        </p>
+        <p>Vous devez créer un algorithme qui affiche, à la validation du formulaire,
+            une maison telle que :</p>
+        <ul>
+            <li>Si on entre les valeurs : largeur =10 et hauteur = 5 dans les champs, la
+                maison qui s’affiche sur la page doit ressembler à ceci :</li>
+            <li>Si on entre les valeurs largeur = 20 et hauteur = 10 dans les champs,
+                la maison qui s’affiche sur la page doit ressembler à ceci :</li>
+        </ul>
+        <h3><hr>Début du programme :</h3>
+        <h4><hr>Formulaire :</h4>
+        <form action="./includes/envoi.php" target="_blank" method="get">
+            <fieldset>
+                <legend>Dimensions Maison</legend>
+
+                <label for="hauteur">Hauteur</label>
+                <input type="number" name="hauteur" id="hauteur">
+
+                <label for="largeur">Largeur</label>
+                <input type="number" name="largeur" id="largeur">
+
+                <input type="reset" value="Effacer">
+                <input type="submit" value="Envoyer">
+
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
