@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST["style"])) {
     $sel_style = $_POST["style"];
-    echo "Je choisis le : " . $sel_style;
+    // echo "Je choisis le : " . $sel_style;
 }
    
 ?>
