@@ -8,5 +8,5 @@ function bonjour($jour) {
 }
 
 $jour = false;
-bonjour($jour); // call the function
+bonjour($jour); // appel de la fonction
 ?>
