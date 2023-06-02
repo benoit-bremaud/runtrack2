@@ -61,10 +61,29 @@
         <form action="./includes/functions.php" target="_blank" method="post">
             <fieldset>
                 <legend>Faites votre choix :</legend>
-                <label for="txt">Saisissez votre texte :</label>
-                <input type="text" name="txt" id="txt">
-
-                <label for="function">Choix transformation :</label>
+                    <div>
+                        <label for="txt">Saisissez votre texte :</label>
+                        <input type="text" name="str" id="txt" value="Benoit Bremaud étudiant à Laplateforme en développeur Web."><br>
+                    </div>
+                    <div>
+                        <br><label for="function">Choix transformation :</label>
+                        <select name="fonction" id="function">
+                            <option value="gras">gras</option>
+                            <option value="cesar">cesar</option>
+                            <option value="plateforme">plateforme</option>
+                        </select>
+                    </div>
+                    <div>
+                        <br><label for="nbr">Décalage :</label>
+                        <input type="number" name="nbr" id="nbr" value=2>
+                    </div>
+                    <div>
+                        <br><label for="term">Terminaison :</label>
+                        <input type="text" name="terminaison" id="term" value="me">
+                    </div>
+                    <div>
+                        <input type="submit" value="Action !">
+                    </div>
                 
             </fieldset>
         </form>
