@@ -64,6 +64,7 @@
         <form method="POST" action="">
             <input type="submit" name="reset" value="Reset">
         </form>
+        
         <h3>Descritpion du code :</h3>
         <h4>Définitions </h4>
         <fieldset>
