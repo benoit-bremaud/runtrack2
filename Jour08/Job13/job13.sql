@@ -47,16 +47,15 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
 MariaDB:3307/jour09/salles/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=jour09&table=salles&server=2
 
-   Affichage des lignes 0 -  0 (total de 1, traitement en 0,0004 seconde(s).)
+   Affichage des lignes 0 -  0 (total de 1, traitement en 0,0003 seconde(s).)
 
 
-SELECT AVG(capacite)
+SELECT ROUND(AVG(capacite))
 AS "Capacité moyenne des salles"
 FROM `salles`;
 
 
 
-40.6667	
+41	
