@@ -9,7 +9,7 @@
 <body>
 <?php
 echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Id</th><th>Prenom</th><th>Nom</th><th>Naissance</th><th>Sexe</th><th>Email</th></tr>";
+echo "<tr><th>Prenom</th><th>Nom</th><th>Naissance</th><th>Sexe</th><th>Email</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator {
   function __construct($it) {
@@ -37,7 +37,7 @@ $dbname = "jour09";
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $stmt = $conn->prepare("SELECT * FROM etudiants");
+  $stmt = $conn->prepare("SELECT prenom, nom, naissance, sexe, email FROM etudiants");
   $stmt->execute();
   
   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
