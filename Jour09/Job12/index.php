@@ -23,7 +23,7 @@
     </ul>
 
 <?php
-echo "<h3><hr>Requête qui selectionne le prénom, le nom e tal date de naissance des étudiants nés entre 1998 et 2018.</h3>";
+echo "<h3><hr>Requête qui selectionne le prénom, le nom et la date de naissance des étudiants nés entre 1998 et 2018.</h3>";
 echo "<table style='border: solid 2px purple;'>"; # Définition des contours du tableau
 echo "<tr><th>prenom</th><th>nom</th><th>naissance</th></tr>"; # affichage des titres du tableau
 
