@@ -9,7 +9,7 @@
 <body>
 <?php
 echo "<h2><hr>Requête qui affiche le nombre total d'étudiants dans la table etudiants</h2>";
-echo "<table style='border: solid 1px black;'>"; # Définition des contours du tableau
+echo "<table style='border: solid 2px black;'>"; # Définition des contours du tableau
 echo "<tr><th>NB étudiants</th></tr>"; # affichage des titres du tableau
 
 class TableRows extends RecursiveIteratorIterator {
