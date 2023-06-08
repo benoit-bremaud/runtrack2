@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-echo "<h2><hr>Requête qui affiche la <b>sommes</b> des capacités des salles</h2>";
+echo "<h2><hr>Requête qui affiche la <b>somme</b> des capacités des salles</h2>";
 echo "<table style='border: solid 2px purple;'>"; # Définition des contours du tableau
 echo "<tr><th>Capacite_totale</th></tr>"; # affichage des titres du tableau
 
